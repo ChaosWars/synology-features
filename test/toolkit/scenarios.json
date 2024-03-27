@@ -1,0 +1,19 @@
+{
+    "toolkit": {
+        "features": {
+            "toolkit": {
+                "dsmVersion": "7.2",
+                "architecture": "geminilake"
+            }
+        },
+        "image": "mcr.microsoft.com/devcontainers/cpp:jammy",
+        "mounts": [
+            {
+                "source": "${devcontainerId}-toolkit",
+                "target": "/toolkit",
+                "type": "volume"
+            }
+        ],
+        "remoteUser": "root"
+    }
+}

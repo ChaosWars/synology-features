@@ -1,0 +1,90 @@
+{
+    "name": "Synology toolkit",
+    "id": "toolkit",
+    "version": "1.0.0",
+    "capAdd": [
+        "SYS_PTRACE"
+    ],
+    "dependsOn": {
+        "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
+            "packages": "apt-utils,build-essential,autoconf,automake,ca-certificates,cifs-utils,curl,git,m4,python3,python3-pip,python-is-python3,xz-utils,zlib1g-dev"
+        }
+    },
+    "description": "Develop packages for the Synology NAS platform.",
+    "entrypoint": "",
+    "mounts": [
+        {
+            "source": "${devcontainerId}-toolkit",
+            "target": "/toolkit",
+            "type": "volume"
+        }
+    ],
+    "options": {
+        "dsmVersion": {
+            "type": "string",
+            "enum": [
+                "7.0",
+                "7.1",
+                "7.2"
+            ],
+            "default": "7.2",
+            "description": "Choose DSM version."
+        },
+        "architecture": {
+            "type": "string",
+            "enum": [
+                "6281",
+                "alpine",
+                "alpine4k",
+                "apollolake",
+                "armada370",
+                "armada375",
+                "armada37xx",
+                "armada38x",
+                "armadaxp",
+                "avoton",
+                "braswell",
+                "broadwell",
+                "broadwellnk",
+                "bromolow",
+                "cedarview",
+                "comcerto2k",
+                "denverton",
+                "dockerx64",
+                "evansport",
+                "geminilake",
+                "grantley",
+                "hi3535",
+                "kvmx64",
+                "monaco",
+                "purley",
+                "qoriq",
+                "rtd1296",
+                "v1000",
+                "x64"
+            ],
+            "default": "geminilake",
+            "description": "Choose NAS architecture."
+        },
+        "toolkitPath": {
+            "type": "string",
+            "proposals": [
+                "/toolkit"
+            ],
+            "default": "/toolkit",
+            "description": "Choose toolkit path."
+        },
+        "pkgscriptsDir": {
+            "type": "string",
+            "proposals": [
+                "pkgscripts-ng"
+            ],
+            "default": "pkgscripts-ng",
+            "description": "Pkgscripts directory. It is relative to the toolkit directory."
+        }
+    },
+    "privileged": true,
+    "securityOpt": [
+        "apparmor:unconfined"
+    ]
+}
