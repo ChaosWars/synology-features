@@ -7,7 +7,7 @@ Develop packages for the Synology NAS platform.
 
 ```json
 "features": {
-    "ghcr.io/ChaosWars/synology-toolkit-feature/toolkit:1": {}
+    "ghcr.io/ChaosWars/synology-features/toolkit:1": {}
 }
 ```
 
@@ -50,4 +50,4 @@ After this you can run any of the scripts in the `/toolkit/pkgscript-ng` directo
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ChaosWars/synology-toolkit-feature/blob/main/src/toolkit/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ChaosWars/synology-features/blob/main/src/toolkit/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
