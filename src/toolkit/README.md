@@ -1,5 +1,5 @@
 
-# Synology toolkit (toolkit)
+# Synology NAS Development (toolkit)
 
 Develop packages for the Synology NAS platform.
 
@@ -29,7 +29,7 @@ Synology toolkit scripts will be downloaded to `/toolkit/pkgscripts-ng` by defau
 ```jsonc
 {
     "features": {
-        "ghcr.io/ChaosWars/synology-toolkit-feature/toolkit:1": {
+        "ghcr.io/ChaosWars/synology-features/toolkit:1": {
             "dsmVersion": "7.2",
             "architecture": "geminilake"
         }
