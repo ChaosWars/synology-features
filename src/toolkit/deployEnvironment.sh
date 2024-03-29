@@ -1,11 +1,9 @@
 #!/bin/bash
 
-PKGSCRIPTSPATH="${TOOLKITPATH}/${PKGSCRIPTSDIR}"
-
-# if [[ ! -v PKGSCRIPTSPATH ]]; then
-#     echo "PKGSCRIPTSPATH is not set"
-#     exit 1
-# fi
+if [[ ! -v PKGSCRIPTSPATH ]]; then
+    echo "PKGSCRIPTSPATH is not set"
+    exit 1
+fi
 
 ARCHITECTURE_INCLUDES="$PKGSCRIPTSPATH/include/platform.$ARCHITECTURE"
 

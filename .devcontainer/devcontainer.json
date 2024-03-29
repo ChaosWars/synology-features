@@ -20,12 +20,13 @@
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker": {}
+        "./features/toolkit": {},
+        "ghcr.io/devcontainers/features/docker-outside-of-docker": {},
+        "ghcr.io/devcontainers-contrib/features/act": {}
     },
     "image": "mcr.microsoft.com/devcontainers/cpp:jammy",
     "init": true,
     "name": "synology-toolkit",
-    "postCreateCommand": "${containerWorkspaceFolder}/.devcontainer/postCreate.sh",
     "privileged": true,
     "remoteUser": "root"
 }

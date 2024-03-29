@@ -1,12 +1,14 @@
 #!/bin/bash
 
 set -eu
-env
 
 if [[ ! -d "${TOOLKITPATH}" ]]; then
     mkdir -p "${TOOLKITPATH}"
 fi
 
+ENTRYPOINT="/usr/local/sbin/entrypoint.sh"
+
 ./checkoutToolkit.sh
-cp ./deployEnvironment.sh "/usr/local/sbin/deployEnvironment.sh"
-chmod +x "/usr/local/sbin/deployEnvironment.sh"
+./writeEnvironmentVariables.sh "/etc/profile.d/99-synology-feature-toolkit.sh"
+cp ./deployEnvironment.sh "$ENTRYPOINT"
+chmod +x "$ENTRYPOINT"

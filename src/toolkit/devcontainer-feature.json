@@ -11,25 +11,15 @@
         }
     },
     "description": "Develop packages for the Synology NAS platform.",
-    "entrypoint": "",
+    "entrypoint": "/usr/local/sbin/entrypoint.sh",
     "mounts": [
         {
-            "source": "${devcontainerId}-toolkit",
+            "source": "toolkit",
             "target": "/toolkit",
             "type": "volume"
         }
     ],
     "options": {
-        "dsmVersion": {
-            "type": "string",
-            "enum": [
-                "7.0",
-                "7.1",
-                "7.2"
-            ],
-            "default": "7.2",
-            "description": "Choose DSM version."
-        },
         "architecture": {
             "type": "string",
             "enum": [
@@ -65,6 +55,16 @@
             ],
             "default": "geminilake",
             "description": "Choose NAS architecture."
+        },
+        "dsmVersion": {
+            "type": "string",
+            "enum": [
+                "7.0",
+                "7.1",
+                "7.2"
+            ],
+            "default": "7.2",
+            "description": "Choose DSM version."
         },
         "toolkitPath": {
             "type": "string",

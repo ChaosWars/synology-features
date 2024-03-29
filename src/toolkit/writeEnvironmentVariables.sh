@@ -1,0 +1,18 @@
+#!/bin/bash
+
+OUTPUT_PATH=$1
+
+if [[ -z "$OUTPUT_PATH" ]]; then
+    echo "OUTPUT_PATH is not set"
+    exit 1
+fi
+
+cat << EOF > "$OUTPUT_PATH"
+export ARCHITECTURE="$ARCHITECTURE"
+export DSMVERSION="$DSMVERSION"
+export PKGSCRIPTSDIR="$PKGSCRIPTSDIR"
+export TOOLKITPATH="$TOOLKITPATH"
+export PKGSCRIPTSPATH="$TOOLKITPATH/$PKGSCRIPTSDIR"
+EOF
+
+chmod +x "$OUTPUT_PATH"
