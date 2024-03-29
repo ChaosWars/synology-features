@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ -v CI ]]; then
+    "CI environment detected, skipping environment deployment"
+    exit 0
+fi
+
 if [[ ! -v ARCHITECTURE ]]; then
     echo "ARCHITECTURE is not set"
     exit 1
