@@ -16,7 +16,7 @@
         "image": "mcr.microsoft.com/devcontainers/cpp:jammy",
         "mounts": [
             {
-                "source": "${devcontainerId}-toolkit",
+                "source": "toolkit",
                 "target": "/toolkit",
                 "type": "volume"
             }
