@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ -v CI ]]; then
-    "CI environment detected, skipping environment deployment"
+    echo "CI environment detected, skipping environment deployment"
     exit 0
 fi
 
