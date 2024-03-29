@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ ! -v ARCHITECTURE ]]; then
+    echo "ARCHITECTURE is not set"
+    exit 1
+fi
+
 if [[ ! -v PKGSCRIPTSPATH ]]; then
     echo "PKGSCRIPTSPATH is not set"
     exit 1
@@ -13,6 +18,16 @@ if [[ ! -f "$ARCHITECTURE_INCLUDES" ]]; then
 fi
 
 source $ARCHITECTURE_INCLUDES
+
+if [[ ! -v DSMVERSION ]]; then
+    echo "DSMVERSION is not set"
+    exit 1
+fi
+
+if [[ ! -v TOOLKITPATH ]]; then
+    echo "TOOLKITPATH is not set"
+    exit 1
+fi
 
 BUILD_ENV="$TOOLKITPATH/build_env/ds.$ARCHITECTURE-$DSMVERSION"
 TARBALL_DIR="$TOOLKITPATH/toolkit_tarballs"
