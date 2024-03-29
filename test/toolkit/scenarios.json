@@ -1,5 +1,12 @@
 {
     "toolkit": {
+        "containerEnv": {
+            "ARCHITECTURE": "geminilake",
+            "DSMVERSION": "7.2",
+            "PKGSCRIPTSDIR": "pkgscripts-ng",
+            "PKGSCRIPTSPATH": "/toolkit/pkgscripts-ng",
+            "TOOLKITPATH": "/toolkit"
+        },
         "features": {
             "toolkit": {
                 "dsmVersion": "7.2",
