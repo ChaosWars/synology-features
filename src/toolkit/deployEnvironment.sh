@@ -22,6 +22,7 @@ if [[ ! -f "$ARCHITECTURE_INCLUDES" ]]; then
     exit 1
 fi
 
+echo "Sourcing $ARCHITECTURE_INCLUDES"
 source $ARCHITECTURE_INCLUDES
 
 if [[ ! -v DSMVERSION ]]; then
@@ -45,6 +46,7 @@ if [[ ! -d "$BUILD_ENV" ]]; then
         _ENV_DEPLOY_ARGS="-t $TARBALL_DIR"
     fi
 
+    echo "Deploying environment for DSM version $DSMVERSION on $ARCHITECTURE"
     ${PKGSCRIPTSPATH}/EnvDeploy -v $DSMVERSION -p $ARCHITECTURE $_ENV_DEPLOY_ARGS
 else
     echo "Environment already deployed"

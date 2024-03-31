@@ -1,4 +1,3 @@
-
 # Synology NAS Development (toolkit)
 
 Develop packages for the Synology NAS platform.

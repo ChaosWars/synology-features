@@ -1,8 +1,8 @@
-# Synology toolkit for NAS Development
+## Synology toolkit for NAS Development
 
 Synology toolkit scripts will be downloaded to `/toolkit/pkgscripts-ng` by default. `/toolkit` is mounted as a docker volume.
 
-## Usage
+### Usage
 
 ```jsonc
 {
@@ -21,6 +21,6 @@ Synology toolkit scripts will be downloaded to `/toolkit/pkgscripts-ng` by defau
 
 Note that the `privileged` and `remoteUser` settings are required for the Synology toolkit to work correctly.
 
-## Development
+### Development
 
 After this you can run any of the scripts in the `/toolkit/pkgscript-ng` directory as you normally would when developing packages for Synology NAS.
