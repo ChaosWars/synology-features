@@ -1,3 +1,4 @@
+
 # Synology NAS Development (toolkit)
 
 Develop packages for the Synology NAS platform.
@@ -14,16 +15,16 @@ Develop packages for the Synology NAS platform.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| dsmVersion | Choose DSM version. | string | 7.2 |
 | architecture | Choose NAS architecture. | string | geminilake |
+| dsmVersion | Choose DSM version. | string | 7.2 |
 | toolkitPath | Choose toolkit path. | string | /toolkit |
 | pkgscriptsDir | Pkgscripts directory. It is relative to the toolkit directory. | string | pkgscripts-ng |
 
-# Synology toolkit for NAS Development
+## Synology toolkit for NAS Development
 
 Synology toolkit scripts will be downloaded to `/toolkit/pkgscripts-ng` by default. `/toolkit` is mounted as a docker volume.
 
-## Usage
+### Usage
 
 ```jsonc
 {
@@ -42,7 +43,7 @@ Synology toolkit scripts will be downloaded to `/toolkit/pkgscripts-ng` by defau
 
 Note that the `privileged` and `remoteUser` settings are required for the Synology toolkit to work correctly.
 
-## Development
+### Development
 
 After this you can run any of the scripts in the `/toolkit/pkgscript-ng` directory as you normally would when developing packages for Synology NAS.
 
