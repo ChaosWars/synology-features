@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ENVIRONMENT_PATH
+
 if [[ -v CI ]]; then
     echo "CI environment detected, skipping environment deployment"
     exit 0

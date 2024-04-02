@@ -85,6 +85,6 @@
     },
     "privileged": true,
     "securityOpt": [
-        "apparmor:unconfined"
+        "apparmor=unconfined"
     ]
 }

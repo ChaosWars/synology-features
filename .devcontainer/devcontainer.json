@@ -15,7 +15,9 @@
                 "GitHub.vscode-github-actions",
                 "Guyutongxue.cpp-reference",
                 "ms-vscode.cpptools",
-                "ms-vscode.makefile-tools"
+                "ms-vscode.makefile-tools",
+                "GitHub.vscode-pull-request-github",
+                "GitHub.remotehub"
             ]
         }
     },
@@ -28,5 +30,9 @@
     "init": true,
     "name": "synology-toolkit",
     "privileged": true,
-    "remoteUser": "root"
+    "remoteUser": "root",
+    "runArgs": [
+        "--name",
+        "synology-toolkit"
+    ]
 }
