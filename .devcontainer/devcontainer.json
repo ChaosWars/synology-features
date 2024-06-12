@@ -14,10 +14,11 @@
             "extensions": [
                 "GitHub.vscode-github-actions",
                 "Guyutongxue.cpp-reference",
-                "ms-vscode.cpptools",
-                "ms-vscode.makefile-tools",
                 "GitHub.vscode-pull-request-github",
-                "GitHub.remotehub"
+                "GitHub.remotehub",
+                "ms-vscode.cpptools",
+                "ms-vscode.extension-test-runner",
+                "ms-vscode.makefile-tools"
             ]
         }
     },
@@ -33,6 +34,6 @@
     "remoteUser": "root",
     "runArgs": [
         "--name",
-        "synology-toolkit"
+        "synology-toolkit-feature"
     ]
 }
