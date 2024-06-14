@@ -27,7 +27,7 @@
         "ghcr.io/devcontainers/features/docker-outside-of-docker": {},
         "ghcr.io/devcontainers-contrib/features/act": {}
     },
-    "image": "mcr.microsoft.com/devcontainers/cpp:jammy",
+    "image": "mcr.microsoft.com/devcontainers/base:1-jammy",
     "init": true,
     "name": "synology-toolkit",
     "privileged": true,
