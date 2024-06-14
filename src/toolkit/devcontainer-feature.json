@@ -14,7 +14,7 @@
     "entrypoint": "/usr/local/sbin/entrypoint.sh",
     "mounts": [
         {
-            "source": "toolkit",
+            "source": "${devcontainerId}-toolkit",
             "target": "/toolkit",
             "type": "volume"
         }

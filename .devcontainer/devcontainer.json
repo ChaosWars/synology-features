@@ -31,5 +31,9 @@
     "init": true,
     "name": "synology-toolkit",
     "privileged": true,
-    "remoteUser": "root"
+    "remoteUser": "root",
+    "runArgs": [
+        "--name",
+        "synology-toolkit-feature"
+    ]
 }
