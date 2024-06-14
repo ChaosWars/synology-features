@@ -13,7 +13,7 @@
                 "architecture": "geminilake"
             }
         },
-        "image": "mcr.microsoft.com/devcontainers/cpp:jammy",
+        "image": "mcr.microsoft.com/devcontainers/base:1-jammy",
         "mounts": [
             {
                 "source": "toolkit",

@@ -1,8 +1,6 @@
 name: "CI - Test Features"
 on:
   push:
-    branches:
-      - main
   pull_request:
   workflow_dispatch:
 
@@ -13,7 +11,7 @@ jobs:
     strategy:
       matrix:
         baseImage:
-          - mcr.microsoft.com/devcontainers/cpp:jammy
+          - mcr.microsoft.com/devcontainers/base:1-jammy
         features:
           - toolkit
     steps:
