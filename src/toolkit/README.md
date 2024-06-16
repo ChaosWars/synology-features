@@ -7,7 +7,7 @@ Develop packages for the Synology NAS platform.
 
 ```json
 "features": {
-    "ghcr.io/ChaosWars/synology-features/toolkit:1": {}
+    "ghcr.io/ChaosWars/synology-features/toolkit": {}
 }
 ```
 
