@@ -7,7 +7,7 @@ Develop packages for the Synology NAS platform.
 
 ```json
 "features": {
-    "ghcr.io/ChaosWars/synology-features/toolkit": {}
+    "ghcr.io/ChaosWars/synology-features/toolkit:1": {}
 }
 ```
 
@@ -34,7 +34,7 @@ Synology toolkit scripts will be downloaded to `/toolkit/pkgscripts-ng` by defau
             "architecture": "geminilake"
         }
     },
-    "image": "mcr.microsoft.com/devcontainers/cpp:jammy",
+    "image": "mcr.microsoft.com/devcontainers/base:1-jammy",
     "init": true,
     "privileged": true,
     "remoteUser": "root"
