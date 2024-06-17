@@ -1,3 +1,4 @@
+---
 name: "Release dev container features & Generate Documentation"
 on:
   push:
